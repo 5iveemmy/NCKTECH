@@ -35,10 +35,9 @@ function Form() {
       </div>
       <div className="add">
         <p>
-          {" "}
-          <span>
-            <img src={circle} alt="circle" className="blue-circle" />
-          </span>{" "}
+          <label className="container">
+            <input type="radio" checked="checked" name="" radio />
+          </label>
           <span className="p-tag">Use this card for next time purchase</span>
         </p>
         <button className="add-card">Add card</button>

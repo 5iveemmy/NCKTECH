@@ -35,7 +35,7 @@
 }
 
 .nav > div:not(:last-child) {
-  margin-right: 3.5rem;
+  margin-right: 2.5rem;
 }
 
 .links {
@@ -51,6 +51,40 @@
   margin: 4px 0;
   padding: 0 15px;
   border-radius: 100%;
+}
+
+/* Radio checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .money-head {
@@ -84,6 +118,7 @@
   padding-bottom: 25px;
   border-bottom: 1px solid var(--border-color);
 }
+
 /* For Card  */
 
 .card {
@@ -180,6 +215,7 @@
 
 .add {
   margin-left: 3.5rem;
+  width: 100%;
 }
 
 .p-tag {
@@ -242,10 +278,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .nav {
-    justify-content: center;
-  }
-
   .right {
     width: 35%;
   }
@@ -262,7 +294,7 @@
     width: 100%;
     padding-top: 2rem;
     justify-content: center;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     flex-wrap: wrap;
   }
 }
