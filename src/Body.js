@@ -42,11 +42,9 @@ function Body() {
                     <img src={master} alt="icon-master" />
                   </Link>
                 </div>
-                {/* <div className="paypal"> */}
                 <Link>
                   <img src={paypal} alt="paypal" className="paypal" />
                 </Link>
-                {/* </div> */}
               </div>
             </div>
             <div className="payment">
