@@ -191,10 +191,9 @@
   flex-direction: column;
   width: 42%;
   padding-bottom: 15px;
-  /* margin: 0 auto; */
 }
+
 .for-margin {
-  /* margin-right: 20px; */
   margin: 0 auto;
 }
 
