@@ -23,7 +23,7 @@
 
 .nav-list {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .nav {
@@ -183,7 +183,7 @@
   width: 55%;
   max-width: 42rem;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .card-group {

@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import circle from "../images/circle.png";
 
 function Form() {
   return (
@@ -16,21 +15,15 @@ function Form() {
         />
       </div>
       <div className="card-group">
-        <label htmlFor="" className="form-labels">
-          Expiration date
-        </label>
+        <label className="form-labels">Expiration date</label>
         <input type="text" class="form-control" placeholder="03/24" />
       </div>
       <div className="card-group for-margin">
-        <label htmlFor="" className="form-labels">
-          Security code
-        </label>
+        <label className="form-labels">Security code</label>
         <input type="text" class="form-control" placeholder="420" />
       </div>
       <div className="card-group">
-        <label htmlFor="" className="form-labels">
-          Postal Code
-        </label>
+        <label className="form-labels">Postal Code</label>
         <input type="text" class="form-control" placeholder="10119" />
       </div>
       <div className="add">
