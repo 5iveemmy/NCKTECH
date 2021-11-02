@@ -6,6 +6,7 @@ import Card from "./Payment/Card";
 import iconVisa from "./images/icon-pay-02.png";
 import master from "./images/icon-pay-03.png";
 import paypal from "./images/paypal.png";
+import Form from "./Payment/Form";
 
 function Body() {
   return (
@@ -50,39 +51,29 @@ function Body() {
             </div>
             <div className="payment">
               <Card />
-              <form action="" className="card-input">
-                <div className="card-group for-margin">
-                  <label htmlFor="" className="form-labels">
-                    Credit card number
-                  </label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div className="card-group">
-                  <label htmlFor="" className="form-labels">
-                    Expiration date
-                  </label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div className="card-group for-margin">
-                  <label htmlFor="" className="form-labels">
-                    Security code
-                  </label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div className="card-group">
-                  <label htmlFor="" className="form-labels">
-                    Postal Code
-                  </label>
-                  <input type="text" class="form-control" />
-                </div>
-              </form>
+              <Form />
             </div>
-            <h3>Subtotal</h3>
-            <h4>Estimated TAX</h4>
-            <h5>
-              Promotional Code <input type="text" />{" "}
-            </h5>
-            <button>Complete payment</button>
+            <div className="total">
+              <p>
+                {" "}
+                <span>Subtotal</span> <span>#2,497.00</span>
+              </p>
+              <p>
+                {" "}
+                <span>Estimated TAX</span> <span>#119.64</span>
+              </p>
+              <p>
+                {" "}
+                <span>
+                  Promotional Code:<span className="faded">Z4KXLM9A</span>
+                </span>{" "}
+                <span>-60.00</span>
+              </p>
+            </div>
+            <div className="complete">
+              <button className="complete-pay">Complete payment</button>
+              <p>TOTAL:#2556.64</p>
+            </div>
           </div>
         </div>
       </div>

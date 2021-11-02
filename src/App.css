@@ -10,7 +10,9 @@
 }
 
 *:root {
-  --border-color: #00000012;
+  --border-color: #00000020;
+  --button-color: #0808ff;
+  --button-hover: #5f5fb8;
 }
 
 .body {
@@ -79,6 +81,8 @@
 .payment {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
 }
 /* For Card  */
 
@@ -125,12 +129,12 @@
 
 .card-no {
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 17px;
 }
 
 .card-holder {
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .name {
@@ -142,6 +146,7 @@
 .card-input {
   display: flex;
   width: 55%;
+  max-width: 42rem;
   flex-wrap: wrap;
   justify-content: end;
 }
@@ -150,10 +155,14 @@
   display: flex;
   flex-direction: column;
   width: 42%;
+  padding-bottom: 15px;
+  /* margin: 0 auto; */
 }
 .for-margin {
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  margin: 0 auto;
 }
+
 .form-control {
   height: 3rem;
   padding: 0.375rem 0.75rem;
@@ -163,4 +172,125 @@
 }
 .form-labels {
   padding-bottom: 10px;
+}
+
+.blue-circle {
+  width: 2%;
+}
+
+.add {
+  margin-left: 3.5rem;
+}
+
+.p-tag {
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 3.5rem;
+}
+
+.add-card {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.add-card:hover,
+.complete-pay:hover {
+  cursor: pointer;
+  background-color: var(--button-hover);
+  transition: ease-in-out 0.4s;
+}
+
+.total {
+  padding: 35px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.total p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.faded {
+  color: var(--border-color);
+}
+
+.complete {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px 4rem;
+}
+
+.complete-pay {
+  background-color: var(--button-color);
+  padding: 12px 25px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+.complete p {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .right {
+    width: 35%;
+  }
+
+  .payment {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+
+  .card-input {
+    width: 100%;
+    padding-top: 2rem;
+    justify-content: center;
+    /* margin: 0 auto; */
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-input {
+    margin: 0 auto;
+  }
+
+  .add {
+    margin-right: 4rem;
+  }
+  .card-group {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .nav {
+    width: max-content;
+  }
+  .money-head {
+    flex-direction: column;
+  }
+  .left {
+    padding-bottom: 22px;
+  }
+  .right {
+    width: 50%;
+  }
 }
