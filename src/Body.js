@@ -7,23 +7,25 @@ import iconVisa from "./images/icon-pay-02.png";
 import master from "./images/icon-pay-03.png";
 import paypal from "./images/paypal.png";
 import Form from "./Payment/Form";
+import logo from "./images/logo_sig.png";
 
 function Body() {
   return (
     <div className="body">
       <div className="body-wrap">
         <div className="nav">
-          <div className="nav-list">
-            <Link className="links">TRIPS</Link>
+          <div className="company">
+            <img src={logo} alt="Company logo" />
           </div>
-          <div>
-            <Link className="links">RECENTLY VIEWED</Link>
-          </div>
-          <div>
-            <Link className="links">BOOKINGS</Link>
-          </div>
-          <div className="circle">
-            <img src={privacy} alt="Cardi-B" />
+          <div className="test">
+            <div className="nav-list">
+              <Link className="links">TRIPS</Link>
+              <Link className="links">RECENTLY VIEWED</Link>
+              <Link className="links">BOOKINGS</Link>
+            </div>
+            <div className="circle">
+              <img src={privacy} alt="Cardi-B" />
+            </div>
           </div>
         </div>
         <div className="money">
