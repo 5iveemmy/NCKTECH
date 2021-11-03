@@ -19,9 +19,15 @@ function Body() {
           </div>
           <div className="test">
             <div className="nav-list">
-              <Link className="links">TRIPS</Link>
-              <Link className="links">RECENTLY VIEWED</Link>
-              <Link className="links">BOOKINGS</Link>
+              <Link className="links" to="/">
+                TRIPS
+              </Link>
+              <Link className="links" to="/">
+                RECENTLY VIEWED
+              </Link>
+              <Link className="links" to="/">
+                BOOKINGS
+              </Link>
             </div>
             <div className="circle">
               <img src={privacy} alt="Cardi-B" />
@@ -37,14 +43,14 @@ function Body() {
               </div>
               <div className="right">
                 <div className="pay-cards">
-                  <Link>
+                  <Link to="/">
                     <img src={iconVisa} alt="icon-visa" />
                   </Link>
-                  <Link>
+                  <Link to="/">
                     <img src={master} alt="icon-master" />
                   </Link>
                 </div>
-                <Link>
+                <Link to="/">
                   <img src={paypal} alt="paypal" className="paypal" />
                 </Link>
               </div>
